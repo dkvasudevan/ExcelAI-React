@@ -1,2 +1,2 @@
-# excelAI-React
+# ExcelAI-React
 Frontend React application for excelAI
