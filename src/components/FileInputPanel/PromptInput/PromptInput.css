@@ -1,12 +1,4 @@
-.prompt-input-div{
-    display: flex;
-    gap: 8px;
-}
-
-.prompt-input {
-
-}
-
-.prompt-input-button {
-
+.prompt-input-div {
+  display: flex;
+  gap: 8px;
 }
