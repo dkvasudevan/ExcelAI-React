@@ -1,11 +1,16 @@
 import './ChatPanel.css';
+import FileInputPanel from '../FileInputPanel/FileInputPanel';
 
 function ChatPanel() {
   return (
     <>
-      <div>Hello</div>
+      <div className="ChatPanel">
+        <div className="FileInput">
+          <FileInputPanel />
+        </div>
+      </div>
     </>
   );
 }
 
-export default FileInputPanel;
+export default ChatPanel;
