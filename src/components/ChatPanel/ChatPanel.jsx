@@ -1,5 +1,5 @@
 import './ChatPanel.css';
-import FileInputPanel from '../FileInputPanel/FileInputPanel';
+import FileInputPanel from './FileInputPanel/FileInputPanel';
 
 function ChatPanel() {
   return (
