@@ -1,13 +1,17 @@
-import React, { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 // Create the context
 const MyContext = createContext();
 
 // Create a provider component
-export const MyContextProvider = () => {
+export const MyContextProvider = ({ children }) => {
   const [chatHistory, setChatHistory] = useState([]);
 
-  return <MyContext.Provider value={{ chatHistory, setChatHistory }} />;
+  return (
+    <MyContext.Provider value={{ chatHistory, setChatHistory }}>
+      {children}
+    </MyContext.Provider>
+  );
 };
 
 export const useMyContext = () => {
