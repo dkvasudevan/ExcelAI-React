@@ -1,0 +1,20 @@
+.chat-history-wrapper {
+  /* background-color: red; */
+  width: 60%;
+  height: 80%;
+  position: fixed;
+  left: 50%; /* Move to the horizontal center */
+  transform: translateX(-50%); /*Center the element horizontally*/
+  overflow: auto;
+}
+
+.chat-history-title {
+  position: fixed;
+  left: 50%; /* Move to the horizontal center */
+  transform: translateX(-50%); /*Center the element horizontally*/
+}
+
+.chat-history-messages {
+  margin-top: 100px;
+  /* overflow: auto; */
+}
