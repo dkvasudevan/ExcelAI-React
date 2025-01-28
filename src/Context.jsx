@@ -5,7 +5,9 @@ const MyContext = createContext();
 
 // Create a provider component
 export const MyContextProvider = ({ children }) => {
-  const [chatHistory, setChatHistory] = useState([]);
+  const [chatHistory, setChatHistory] = useState([
+    { user_message: 'hello', agent_message: 'agent hello' },
+  ]);
 
   return (
     <MyContext.Provider value={{ chatHistory, setChatHistory }}>

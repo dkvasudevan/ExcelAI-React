@@ -14,7 +14,10 @@ function PromptInput() {
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent page reload
     console.log('Input Submitted:', inputValue);
-    chatHistory.push(inputValue);
+    chatHistory.push({
+      user_message: inputValue,
+      agent_message: 'test message',
+    });
     setChatHistory([...chatHistory]);
     console.log(chatHistory);
     setInputValue(''); // Clear the input bar after submission

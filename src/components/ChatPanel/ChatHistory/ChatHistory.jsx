@@ -13,7 +13,10 @@ function ChatHistory() {
         <h1 className="chat-history-title">Chat History</h1>
         <div className="chat-history-messages">
           {chatHistory.map((msg, ind) => (
-            <div className="message">{msg}</div>
+            <div>
+              <div className="message">{msg.user_message}</div>
+              <div className="message">{msg.agent_message} </div>
+            </div>
           ))}
         </div>
       </div>
