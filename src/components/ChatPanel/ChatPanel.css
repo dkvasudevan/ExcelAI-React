@@ -1,9 +1,8 @@
 .ChatPanel {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  /* background-color: red; */
   width: 100%;
-
   /* left: 40; */
 }
 
@@ -11,7 +10,7 @@
   position: fixed;
   bottom: 25px;
   left: 50%; /* Move to the horizontal center */
-  transform: translateX(-50%); /* Center the element horizontally */
+  transform: translateX(-50%); /*Center the element horizontally*/
   align-items: center;
   flex-direction: column;
   margin-top: auto;
